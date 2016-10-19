@@ -77,8 +77,15 @@ Template.map.onCreated(function mapOnCreated() {
             MainMap.loadObjects()
         })
 
-        map.instance.addListener('dblclick', () => {
-            console.log(this)
+        map.instance.addListener('dblclick', (e) => {
+            console.log(e.latLng)
+            Bueiros.insert({
+                name: 'Bueiro Anônimo',
+                lat: e.latLng.lat(),
+                lng: e.latLng.lng(),
+            })
+
+            console.log('bueiro inserido')
         })
     })
 
@@ -93,7 +100,8 @@ Template.map.helpers({
             return {
                 center: new google.maps.LatLng(-25.4312715, -49.2772581),
                 zoom: 13,
-                disableDefaultUI: true
+                disableDefaultUI: true,
+                disableDoubleClickZoom: true,
             }
         }
     }
