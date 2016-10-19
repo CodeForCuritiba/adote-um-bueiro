@@ -1,32 +1,35 @@
 <template name="mapControls">
-<div id="mapControls">
+    <div id="mapControls">
 
-    <div class="top-left">
-        <img src="logo-1x.png" alt="">
-    </div>
+        <div class="top-left">
+            <img src="logo-1x.png" alt="">
+        </div>
 
-    <div class="top-right">
-        {{> profile}}
-    </div>
+        <div class="top-right">
+            {{> profile}}
+        </div>
 
-    <div class="bottom-left">
-        {{#if markerAtual }}
-        <span class="name">{{ markerAtual.name }}</span>
-        <br>
-        <button class="btn">Adotar</button>
-        <button class="btn">Cuidar</button>
-        <button class="btn">Abandonar</button>
-        {{/if}}
-    </div>
+        <div class="bottom-left">
+            {{#if markerAtual }}
+            <span class="name">{{ markerAtual.name }}</span>
+            <br>
 
-    <div class="bottom-right">
-        <div class="legenda">
-            <ul>
-                <li>Bueiro para adotar <img src="markers/marker-livre.png" alt=""></li>
-                <li>Bueiro adotado <img src="markers/marker-adotado.png" alt=""></li>
-                <li>Bueiro abandonado <img src="markers/marker-abandonado.png" alt=""></li>
-            </ul>
+            <button class="btn btn-adotar">Adotar</button>
+            <button class="btn btn-cuidar">Cuidar</button>
+            <button class="btn btn-abandonar">Abandonar</button>
+            <button class="btn btn-denuncia">Denunciar</button>
+            {{/if}}
+        </div>
+
+        <div class="bottom-right">
+            <div class="legenda">
+                Legenda
+                <ul>
+                    <li>Bueiro para adotar <img src="markers/marker-livre.png" alt=""></li>
+                    <li>Bueiro adotado <img src="markers/marker-adotado.png" alt=""></li>
+                    <li>Bueiro abandonado <img src="markers/marker-abandonado.png" alt=""></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 </template>

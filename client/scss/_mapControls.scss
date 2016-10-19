@@ -33,9 +33,14 @@
         bottom: 10px;
         right: 0;
         padding-right: 10px;
+        text-align: right;
 
         .legenda{
-            text-align: right;
+            width: 200px;
+            padding: 20px;
+            float: right;
+            background-color: rgba(255, 255, 255, .6);
+
             ul{
                 list-style: none;
             }

@@ -29,7 +29,8 @@ class Map {
                 map: this.map,
                 icon: icon,
                 title: doc.name,
-                id: doc._id
+                id: doc._id,
+                status: doc.status
             })
 
             this.bindMarker(marker)
@@ -44,7 +45,8 @@ class Map {
         marker.addListener('click', (event) => {
             Session.set('markerAtual', {
                 id: marker.id,
-                name: marker.title
+                name: marker.title,
+                status: marker.status
             })
         })
     }

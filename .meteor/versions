@@ -1,3 +1,9 @@
+accounts-base@1.2.11
+accounts-facebook@1.0.10
+accounts-github@1.0.10
+accounts-google@1.0.10
+accounts-oauth@1.1.13
+accounts-twitter@1.0.10
 allow-deny@1.0.5
 autopublish@1.0.7
 autoupdate@1.2.11
@@ -17,6 +23,7 @@ dburles:google-maps@1.1.5
 ddp@1.2.5
 ddp-client@1.2.9
 ddp-common@1.2.6
+ddp-rate-limiter@1.0.5
 ddp-server@1.2.10
 deps@1.0.12
 diff-sequence@1.0.6
@@ -24,9 +31,12 @@ ecmascript@0.5.8
 ecmascript-runtime@0.3.14
 ejson@1.0.12
 es5-shim@4.6.14
+facebook@1.2.8
 fastclick@1.0.12
 fourseven:scss@3.10.0
 geojson-utils@1.0.9
+github@1.1.8
+google@1.1.13
 hot-code-push@1.0.4
 html-tools@1.0.11
 htmljs@1.0.11
@@ -36,6 +46,7 @@ insecure@1.0.7
 jquery@1.11.9
 launch-screen@1.0.12
 livedata@1.0.18
+localstorage@1.0.11
 logging@1.1.15
 meteor@1.2.17
 meteor-base@1.0.4
@@ -50,15 +61,20 @@ mongo@1.1.12
 mongo-id@1.0.5
 natestrauser:animate-css@3.5.1
 npm-mongo@1.5.50
+oauth@1.1.11
+oauth1@1.1.10
+oauth2@1.1.10
 observe-sequence@1.0.12
 ordered-dict@1.0.8
 promise@0.8.7
 random@1.0.10
+rate-limit@1.0.5
 reactive-dict@1.1.8
 reactive-var@1.0.10
 reload@1.1.10
 retry@1.0.8
 routepolicy@1.0.11
+service-configuration@1.0.10
 session@1.1.6
 shell-server@0.2.1
 spacebars@1.0.13
@@ -70,6 +86,7 @@ templating-compiler@1.2.15
 templating-runtime@1.2.15
 templating-tools@1.0.5
 tracker@1.1.0
+twitter@1.1.11
 ui@1.0.12
 underscore@1.0.9
 url@1.0.10

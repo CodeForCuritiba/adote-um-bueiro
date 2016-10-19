@@ -12,6 +12,10 @@ import './modules/loader/loader.html'
 import './modules/mapControls/mapControls.js'
 import './modules/mapControls/mapControls.html'
 
+Template.registerHelper('_', function(){
+  return _;
+});
+
 Session.set('loading', false)
 
 Template.body.helpers({
