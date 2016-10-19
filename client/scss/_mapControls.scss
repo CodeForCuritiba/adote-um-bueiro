@@ -1,0 +1,25 @@
+#mapControls{
+    position: absolute;
+    z-index: 100000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    > * {
+        position: absolute;
+    }
+
+    .left{
+        width: 50%;
+        bottom: 10px;
+        padding-left: 10px;
+        left: 0;
+    }
+
+    .right{
+        width: 50%;
+        bottom: 10px;
+        right: 0;
+        padding-right: 10px;
+    }
+}
