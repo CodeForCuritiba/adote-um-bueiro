@@ -1,25 +1,44 @@
 #mapControls{
-    position: absolute;
-    z-index: 100000;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
     > * {
         position: absolute;
+        z-index: 100000;
     }
 
-    .left{
-        width: 50%;
-        bottom: 10px;
+    .top-left{
+        top: 10px;
         padding-left: 10px;
         left: 0;
     }
 
-    .right{
+    .top-right{
+        top: 10px;
+        padding-right: 10px;
+        right: 0;
+    }
+
+    .bottom-left{
+        width: 50%;
+        bottom: 10px;
+        padding-left: 10px;
+        left: 0;
+
+        .name{
+            background-color: white;
+            padding: 2px;
+        }
+    }
+
+    .bottom-right{
         width: 50%;
         bottom: 10px;
         right: 0;
         padding-right: 10px;
+
+        .legenda{
+            text-align: right;
+            ul{
+                list-style: none;
+            }
+        }
     }
 }

@@ -3,7 +3,12 @@
   padding: 0;
 }
 
+body{
+    font-family: 'Roboto'
+}
+
 @import 'global';
 @import 'loader';
 @import 'mapControls';
+@import 'profile';
 @import 'map';
